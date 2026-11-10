@@ -76,9 +76,16 @@ it was re-typeset from the exported session so the pictures stay readable.
 
 ## Install
 
+From the Hermes plugin catalog, once the entry is listed (the reviewed, pinned commit):
+
 ```bash
-hermes plugins install Max35j/ghost-subscriptions
-hermes plugins enable ghost-subscriptions
+hermes plugins install ghost-subscriptions
+```
+
+Straight from this repository, today (Hermes warns that the source is not from the catalog):
+
+```bash
+hermes plugins install Max35j/ghost-subscriptions --enable
 ```
 
 Requires Hermes 0.21.5 or newer. No Python dependency beyond the standard library.
