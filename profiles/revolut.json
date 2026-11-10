@@ -1,0 +1,43 @@
+{
+ "id": "revolut",
+ "name": "Revolut",
+ "delimiter": ",",
+ "encoding": "utf-8-sig",
+ "skip_rows": 0,
+ "date_formats": [
+  "%Y-%m-%d %H:%M:%S",
+  "%Y-%m-%d"
+ ],
+ "decimal": ".",
+ "sign": "debit_negative",
+ "columns": {
+  "date": [
+   "Completed Date",
+   "Started Date"
+  ],
+  "label": [
+   "Description"
+  ],
+  "amount": [
+   "Amount"
+  ],
+  "fee": [
+   "Fee"
+  ],
+  "currency": [
+   "Currency"
+  ],
+  "state": [
+   "State"
+  ]
+ },
+ "keep_states": [
+  "COMPLETED"
+ ],
+ "distinctive": [
+  "Started Date",
+  "Completed Date",
+  "Product"
+ ],
+ "order": 7
+}

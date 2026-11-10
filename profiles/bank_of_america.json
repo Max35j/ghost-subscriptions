@@ -1,0 +1,31 @@
+{
+ "id": "bank_of_america",
+ "name": "Bank of America",
+ "delimiter": ",",
+ "encoding": "utf-8-sig",
+ "skip_rows": 6,
+ "date_formats": [
+  "%m/%d/%Y"
+ ],
+ "decimal": ".",
+ "sign": "debit_negative",
+ "currency_default": "USD",
+ "columns": {
+  "date": [
+   "Date",
+   "Posted Date"
+  ],
+  "label": [
+   "Description",
+   "Payee"
+  ],
+  "amount": [
+   "Amount"
+  ]
+ },
+ "distinctive": [
+  "Running Bal.",
+  "Reference Number"
+ ],
+ "order": 14
+}

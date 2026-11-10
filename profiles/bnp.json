@@ -1,0 +1,45 @@
+{
+ "id": "bnp",
+ "name": "BNP Paribas",
+ "delimiter": ";",
+ "encoding": "cp1252",
+ "skip_rows": 0,
+ "date_formats": [
+  "%d/%m/%Y",
+  "%d-%m-%Y"
+ ],
+ "decimal": ",",
+ "sign": "debit_negative",
+ "columns": {
+  "date": [
+   "Date operation",
+   "Date opération",
+   "Date"
+  ],
+  "label": [
+   "Libelle operation",
+   "Libellé opération",
+   "Libelle",
+   "Libellé"
+  ],
+  "amount": [
+   "Montant operation",
+   "Montant opération",
+   "Montant"
+  ],
+  "category": [
+   "Categorie",
+   "Catégorie",
+   "Sous Categorie"
+  ],
+  "currency": [
+   "Devise"
+  ]
+ },
+ "distinctive": [
+  "Libelle operation",
+  "Date operation",
+  "Type operation"
+ ],
+ "order": 0
+}

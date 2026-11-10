@@ -1,0 +1,37 @@
+{
+ "id": "capital_one",
+ "name": "Capital One",
+ "delimiter": ",",
+ "encoding": "utf-8-sig",
+ "skip_rows": 0,
+ "date_formats": [
+  "%Y-%m-%d",
+  "%m/%d/%Y"
+ ],
+ "decimal": ".",
+ "sign": "debit_negative",
+ "currency_default": "USD",
+ "columns": {
+  "date": [
+   "Transaction Date",
+   "Posted Date"
+  ],
+  "label": [
+   "Description"
+  ],
+  "debit": [
+   "Debit"
+  ],
+  "credit": [
+   "Credit"
+  ],
+  "category": [
+   "Category"
+  ]
+ },
+ "distinctive": [
+  "Card No.",
+  "Posted Date"
+ ],
+ "order": 15
+}

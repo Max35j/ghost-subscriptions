@@ -1,0 +1,40 @@
+{
+ "id": "n26",
+ "name": "N26",
+ "delimiter": ",",
+ "encoding": "utf-8-sig",
+ "skip_rows": 0,
+ "date_formats": [
+  "%Y-%m-%d"
+ ],
+ "decimal": ".",
+ "sign": "debit_negative",
+ "columns": {
+  "date": [
+   "Booking Date",
+   "Date",
+   "Value Date"
+  ],
+  "label": [
+   "Partner Name",
+   "Payee"
+  ],
+  "detail": [
+   "Payment Reference"
+  ],
+  "amount": [
+   "Amount (EUR)",
+   "Amount"
+  ],
+  "currency": [
+   "Original Currency",
+   "Type Foreign Currency"
+  ]
+ },
+ "distinctive": [
+  "Partner Name",
+  "Payee",
+  "Amount (EUR)"
+ ],
+ "order": 8
+}

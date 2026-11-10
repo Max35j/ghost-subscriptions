@@ -1,0 +1,38 @@
+{
+ "id": "wise",
+ "name": "Wise",
+ "delimiter": ",",
+ "encoding": "utf-8-sig",
+ "skip_rows": 0,
+ "date_formats": [
+  "%d-%m-%Y",
+  "%Y-%m-%d",
+  "%d-%m-%Y %H:%M:%S.%f"
+ ],
+ "decimal": ".",
+ "sign": "debit_negative",
+ "columns": {
+  "date": [
+   "Date"
+  ],
+  "label": [
+   "Description",
+   "Merchant"
+  ],
+  "detail": [
+   "Payment Reference"
+  ],
+  "amount": [
+   "Amount"
+  ],
+  "currency": [
+   "Currency"
+  ]
+ },
+ "distinctive": [
+  "TransferWise ID",
+  "Running Balance",
+  "Exchange From"
+ ],
+ "order": 10
+}

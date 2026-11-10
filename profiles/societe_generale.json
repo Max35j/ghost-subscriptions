@@ -1,0 +1,40 @@
+{
+ "id": "societe_generale",
+ "name": "Société Générale",
+ "delimiter": ";",
+ "encoding": "cp1252",
+ "skip_rows": 2,
+ "date_formats": [
+  "%d/%m/%Y"
+ ],
+ "decimal": ",",
+ "sign": "debit_negative",
+ "columns": {
+  "date": [
+   "Date de l'operation",
+   "Date de l’opération",
+   "Date"
+  ],
+  "label": [
+   "Libelle",
+   "Libellé"
+  ],
+  "detail": [
+   "Detail de l'ecriture",
+   "Détail de l'écriture"
+  ],
+  "amount": [
+   "Montant de l'operation",
+   "Montant de l'opération",
+   "Montant"
+  ],
+  "currency": [
+   "Devise"
+  ]
+ },
+ "distinctive": [
+  "Detail de l'ecriture",
+  "Montant de l'operation"
+ ],
+ "order": 1
+}

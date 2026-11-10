@@ -1,0 +1,70 @@
+{
+ "id": "generic",
+ "name": "Generic (matched by column names)",
+ "delimiter": "auto",
+ "encoding": "auto",
+ "skip_rows": 0,
+ "date_formats": [
+  "%d/%m/%Y",
+  "%Y-%m-%d",
+  "%d/%m/%y",
+  "%d-%m-%Y",
+  "%d.%m.%Y",
+  "%m/%d/%Y"
+ ],
+ "decimal": "auto",
+ "sign": "debit_negative",
+ "columns": {
+  "date": [
+   "Date",
+   "Date operation",
+   "Date opération",
+   "Booking date",
+   "Transaction date",
+   "Date comptable"
+  ],
+  "label": [
+   "Libelle",
+   "Libellé",
+   "Description",
+   "Label",
+   "Wording",
+   "Intitule",
+   "Payee",
+   "Merchant",
+   "Beneficiaire",
+   "Details",
+   "Narrative",
+   "Memo",
+   "Transaction description"
+  ],
+  "amount": [
+   "Montant",
+   "Amount",
+   "Valeur",
+   "Somme",
+   "Transaction amount",
+   "Amount (EUR)",
+   "Amount (GBP)",
+   "Amount (USD)"
+  ],
+  "debit": [
+   "Debit",
+   "Débit",
+   "Withdrawal",
+   "Paid out"
+  ],
+  "credit": [
+   "Credit",
+   "Crédit",
+   "Deposit",
+   "Paid in"
+  ],
+  "currency": [
+   "Devise",
+   "Currency"
+  ]
+ },
+ "distinctive": [],
+ "order": 99
+}

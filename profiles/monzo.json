@@ -1,0 +1,40 @@
+{
+ "id": "monzo",
+ "name": "Monzo",
+ "delimiter": ",",
+ "encoding": "utf-8-sig",
+ "skip_rows": 0,
+ "date_formats": [
+  "%d/%m/%Y"
+ ],
+ "decimal": ".",
+ "sign": "debit_negative",
+ "currency_default": "GBP",
+ "columns": {
+  "date": [
+   "Date"
+  ],
+  "label": [
+   "Name"
+  ],
+  "detail": [
+   "Description"
+  ],
+  "amount": [
+   "Amount"
+  ],
+  "currency": [
+   "Currency"
+  ],
+  "category": [
+   "Category"
+  ]
+ },
+ "distinctive": [
+  "Transaction ID",
+  "Emoji",
+  "Local amount",
+  "Money Out"
+ ],
+ "order": 11
+}

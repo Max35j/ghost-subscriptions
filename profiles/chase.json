@@ -1,0 +1,35 @@
+{
+ "id": "chase",
+ "name": "Chase (US)",
+ "delimiter": ",",
+ "encoding": "utf-8-sig",
+ "skip_rows": 0,
+ "date_formats": [
+  "%m/%d/%Y"
+ ],
+ "decimal": ".",
+ "sign": "debit_negative",
+ "currency_default": "USD",
+ "columns": {
+  "date": [
+   "Posting Date",
+   "Transaction Date"
+  ],
+  "label": [
+   "Description"
+  ],
+  "amount": [
+   "Amount"
+  ],
+  "category": [
+   "Category"
+  ]
+ },
+ "distinctive": [
+  "Posting Date",
+  "Check or Slip #",
+  "Details",
+  "Post Date"
+ ],
+ "order": 13
+}

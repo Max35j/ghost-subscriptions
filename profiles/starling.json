@@ -1,0 +1,36 @@
+{
+ "id": "starling",
+ "name": "Starling Bank",
+ "delimiter": ",",
+ "encoding": "utf-8-sig",
+ "skip_rows": 0,
+ "date_formats": [
+  "%d/%m/%Y"
+ ],
+ "decimal": ".",
+ "sign": "debit_negative",
+ "currency_default": "GBP",
+ "columns": {
+  "date": [
+   "Date"
+  ],
+  "label": [
+   "Counter Party"
+  ],
+  "detail": [
+   "Reference"
+  ],
+  "amount": [
+   "Amount (GBP)",
+   "Amount"
+  ],
+  "category": [
+   "Spending Category"
+  ]
+ },
+ "distinctive": [
+  "Counter Party",
+  "Spending Category"
+ ],
+ "order": 12
+}

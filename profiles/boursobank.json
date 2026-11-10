@@ -1,0 +1,40 @@
+{
+ "id": "boursobank",
+ "name": "Boursobank (ex-Boursorama)",
+ "delimiter": ";",
+ "encoding": "utf-8-sig",
+ "skip_rows": 0,
+ "date_formats": [
+  "%Y-%m-%d",
+  "%d/%m/%Y"
+ ],
+ "decimal": ",",
+ "sign": "debit_negative",
+ "columns": {
+  "date": [
+   "dateOp",
+   "dateOperation"
+  ],
+  "label": [
+   "label",
+   "libelle"
+  ],
+  "amount": [
+   "amount",
+   "montant"
+  ],
+  "category": [
+   "category",
+   "categoryParent"
+  ],
+  "merchant": [
+   "supplierFound"
+  ]
+ },
+ "distinctive": [
+  "dateOp",
+  "supplierFound",
+  "categoryParent"
+ ],
+ "order": 3
+}

@@ -1,0 +1,58 @@
+name: ghost-subscriptions
+version: 1.0.0
+description: >-
+  Finds every subscription and recurring charge in a bank statement export (CSV or OFX),
+  including forgotten ones; flags price increases, duplicate charges, overlapping services
+  and payment plans; totals the yearly cost; and writes a cancellation pack (letters,
+  CSV summary, calendar reminders). Fully offline.
+author: Max35j
+license: MIT
+homepage: https://github.com/Max35j/ghost-subscriptions
+tags: [finance, subscriptions, bank-statement, csv, ofx, privacy, offline]
+manifest_version: 2
+api_version: 1
+requires_hermes: ">=0.21.5"
+provides_tools:
+  - statement_import
+  - statement_audit
+  - statement_cancel_pack
+  - statement_purge
+provides_hooks: []
+python_dependencies: []
+config_schema:
+  confidence_threshold:
+    type: float
+    default: 0.6
+    label: Confidence threshold
+    description: "Recurring charges below this confidence (0-1) are listed as low-confidence instead of subscriptions."
+  language:
+    type: str
+    choices: [en, fr]
+    default: en
+    label: Output language
+    description: "Language of the /subs summary and of the cancellation letters."
+  holder_aliases:
+    type: list
+    default: []
+    label: Your names on statements
+    description: "How your own name appears on transfers between your accounts (e.g. [\"ALEX MARTIN\", \"A MARTIN\"]). Matching transfers are left out."
+  holder_name:
+    type: str
+    default: ""
+    label: Name for letters
+    description: "Signature used in cancellation letters. Leave empty to keep a [signature] placeholder."
+  column_mapping:
+    type: dict
+    default: {}
+    label: Fallback column mapping
+    description: "Used when no bank profile recognises your CSV, e.g. {\"date\": \"Booking day\", \"label\": \"Text\", \"amount\": \"Value\", \"delimiter\": \";\"}. Also accepts debit, credit, currency, date_format, decimal, sign."
+  fx_rates:
+    type: dict
+    default: {}
+    label: Exchange rates
+    description: "Optional. Only with these rates are several currencies added up, e.g. {\"base\": \"EUR\", \"USD\": 0.92}. Without them totals stay per currency."
+  contract_refs:
+    type: dict
+    default: {}
+    label: Contract references
+    description: "Optional customer or contract numbers per subscription id, used in the letters, e.g. {\"canal\": \"123456789\"}."

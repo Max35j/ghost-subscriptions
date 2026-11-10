@@ -1,0 +1,39 @@
+{
+ "id": "credit_agricole",
+ "name": "Crédit Agricole",
+ "delimiter": ";",
+ "encoding": "cp1252",
+ "skip_rows": 9,
+ "date_formats": [
+  "%d/%m/%Y"
+ ],
+ "decimal": ",",
+ "sign": "debit_negative",
+ "columns": {
+  "date": [
+   "Date",
+   "Date operation"
+  ],
+  "label": [
+   "Libelle",
+   "Libellé"
+  ],
+  "debit": [
+   "Debit euros",
+   "Débit euros",
+   "Debit EUR",
+   "Débit"
+  ],
+  "credit": [
+   "Credit euros",
+   "Crédit euros",
+   "Credit EUR",
+   "Crédit"
+  ]
+ },
+ "distinctive": [
+  "Debit euros",
+  "Credit euros"
+ ],
+ "order": 2
+}

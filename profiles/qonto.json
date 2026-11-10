@@ -1,0 +1,58 @@
+{
+ "id": "qonto",
+ "name": "Qonto",
+ "delimiter": ";",
+ "encoding": "utf-8-sig",
+ "skip_rows": 0,
+ "date_formats": [
+  "%d-%m-%Y %H:%M:%S",
+  "%d-%m-%Y %H:%M",
+  "%Y-%m-%d %H:%M:%S",
+  "%d/%m/%Y",
+  "%Y-%m-%d"
+ ],
+ "decimal": ",",
+ "sign": "debit_negative",
+ "columns": {
+  "date": [
+   "Settlement date (UTC)",
+   "Operation date (UTC)",
+   "Settlement date",
+   "Date"
+  ],
+  "label": [
+   "Counterparty name",
+   "Counterparty",
+   "Beneficiary"
+  ],
+  "detail": [
+   "Reference",
+   "Label"
+  ],
+  "amount": [
+   "Total amount (incl. VAT)",
+   "Amount (incl. VAT)",
+   "Total amount",
+   "Amount"
+  ],
+  "currency": [
+   "Currency"
+  ],
+  "category": [
+   "Category"
+  ],
+  "state": [
+   "Status"
+  ]
+ },
+ "keep_states": [
+  "settled",
+  "completed",
+  "executed"
+ ],
+ "distinctive": [
+  "Counterparty name",
+  "Settlement date (UTC)"
+ ],
+ "order": 9
+}

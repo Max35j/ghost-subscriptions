@@ -1,0 +1,40 @@
+{
+ "id": "caisse_epargne",
+ "name": "Caisse d'Épargne",
+ "delimiter": ";",
+ "encoding": "cp1252",
+ "skip_rows": 4,
+ "date_formats": [
+  "%d/%m/%Y",
+  "%d/%m/%y"
+ ],
+ "decimal": ",",
+ "sign": "debit_negative",
+ "columns": {
+  "date": [
+   "Date",
+   "Date operation"
+  ],
+  "label": [
+   "Libelle",
+   "Libellé"
+  ],
+  "detail": [
+   "Detail",
+   "Détail"
+  ],
+  "debit": [
+   "Debit",
+   "Débit"
+  ],
+  "credit": [
+   "Credit",
+   "Crédit"
+  ]
+ },
+ "distinctive": [
+  "Numero d'operation",
+  "Numéro d'opération"
+ ],
+ "order": 6
+}

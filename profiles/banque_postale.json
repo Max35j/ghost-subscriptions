@@ -1,0 +1,32 @@
+{
+ "id": "banque_postale",
+ "name": "La Banque Postale",
+ "delimiter": ";",
+ "encoding": "cp1252",
+ "skip_rows": 6,
+ "date_formats": [
+  "%d/%m/%Y"
+ ],
+ "decimal": ",",
+ "sign": "debit_negative",
+ "columns": {
+  "date": [
+   "Date"
+  ],
+  "label": [
+   "Libelle",
+   "Libellé"
+  ],
+  "amount": [
+   "Montant(EUROS)",
+   "Montant (EUROS)",
+   "Montant(EUR)",
+   "Montant"
+  ]
+ },
+ "distinctive": [
+  "Montant(EUROS)",
+  "Montant (EUROS)"
+ ],
+ "order": 4
+}

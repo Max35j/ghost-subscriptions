@@ -1,0 +1,23 @@
+{
+ "id": "lcl",
+ "name": "LCL",
+ "delimiter": ";",
+ "encoding": "cp1252",
+ "skip_rows": 0,
+ "has_header": false,
+ "date_formats": [
+  "%d/%m/%Y",
+  "%d/%m/%y"
+ ],
+ "decimal": ",",
+ "sign": "debit_negative",
+ "columns": {
+  "date": 0,
+  "amount": 1,
+  "kind": 2,
+  "label": 4
+ },
+ "min_fields": 5,
+ "distinctive": [],
+ "order": 5
+}

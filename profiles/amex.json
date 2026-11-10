@@ -1,0 +1,36 @@
+{
+ "id": "amex",
+ "name": "American Express",
+ "delimiter": ",",
+ "encoding": "utf-8-sig",
+ "skip_rows": 0,
+ "date_formats": [
+  "%m/%d/%Y",
+  "%d/%m/%Y",
+  "%Y-%m-%d"
+ ],
+ "decimal": ".",
+ "sign": "debit_positive",
+ "currency_default": "USD",
+ "columns": {
+  "date": [
+   "Date"
+  ],
+  "label": [
+   "Description",
+   "Appears On Your Statement As"
+  ],
+  "amount": [
+   "Amount"
+  ],
+  "category": [
+   "Category"
+  ]
+ },
+ "distinctive": [
+  "Card Member",
+  "Extended Details",
+  "Appears On Your Statement As"
+ ],
+ "order": 17
+}

@@ -1,0 +1,555 @@
+{
+ "_comment": "Canonical key -> display label and service family. Family drives overlap detection.",
+ "overlap_families": [
+  "video",
+  "music",
+  "cloud",
+  "vpn",
+  "ai",
+  "gym",
+  "audiobook",
+  "delivery",
+  "gaming",
+  "press",
+  "dating",
+  "wellbeing"
+ ],
+ "merchants": {
+  "netflix": {
+   "label": "Netflix",
+   "family": "video"
+  },
+  "disney": {
+   "label": "Disney+",
+   "family": "video"
+  },
+  "prime": {
+   "label": "Amazon Prime",
+   "family": "video"
+  },
+  "canal": {
+   "label": "Canal+",
+   "family": "video"
+  },
+  "molotov": {
+   "label": "Molotov",
+   "family": "video"
+  },
+  "paramount": {
+   "label": "Paramount+",
+   "family": "video"
+  },
+  "max": {
+   "label": "Max",
+   "family": "video"
+  },
+  "apple-tv": {
+   "label": "Apple TV+",
+   "family": "video"
+  },
+  "crunchyroll": {
+   "label": "Crunchyroll",
+   "family": "video"
+  },
+  "youtube": {
+   "label": "YouTube Premium",
+   "family": "video"
+  },
+  "dazn": {
+   "label": "DAZN",
+   "family": "video"
+  },
+  "bein": {
+   "label": "beIN Sports",
+   "family": "video"
+  },
+  "spotify": {
+   "label": "Spotify",
+   "family": "music"
+  },
+  "spotify-family": {
+   "label": "Spotify Family",
+   "family": "music"
+  },
+  "deezer": {
+   "label": "Deezer",
+   "family": "music"
+  },
+  "apple-music": {
+   "label": "Apple Music",
+   "family": "music"
+  },
+  "youtube-music": {
+   "label": "YouTube Music",
+   "family": "music"
+  },
+  "tidal": {
+   "label": "Tidal",
+   "family": "music"
+  },
+  "qobuz": {
+   "label": "Qobuz",
+   "family": "music"
+  },
+  "audible": {
+   "label": "Audible",
+   "family": "audiobook"
+  },
+  "kobo": {
+   "label": "Kobo Plus",
+   "family": "audiobook"
+  },
+  "icloud": {
+   "label": "iCloud+",
+   "family": "cloud"
+  },
+  "google-one": {
+   "label": "Google One",
+   "family": "cloud"
+  },
+  "dropbox": {
+   "label": "Dropbox",
+   "family": "cloud"
+  },
+  "onedrive": {
+   "label": "OneDrive",
+   "family": "cloud"
+  },
+  "pcloud": {
+   "label": "pCloud",
+   "family": "cloud"
+  },
+  "proton": {
+   "label": "Proton",
+   "family": "privacy"
+  },
+  "nordvpn": {
+   "label": "NordVPN",
+   "family": "vpn"
+  },
+  "surfshark": {
+   "label": "Surfshark",
+   "family": "vpn"
+  },
+  "expressvpn": {
+   "label": "ExpressVPN",
+   "family": "vpn"
+  },
+  "cyberghost": {
+   "label": "CyberGhost",
+   "family": "vpn"
+  },
+  "chatgpt": {
+   "label": "ChatGPT Plus",
+   "family": "ai"
+  },
+  "openai": {
+   "label": "OpenAI",
+   "family": "ai_api"
+  },
+  "mistral": {
+   "label": "Le Chat Pro (Mistral)",
+   "family": "ai"
+  },
+  "perplexity": {
+   "label": "Perplexity Pro",
+   "family": "ai"
+  },
+  "notion": {
+   "label": "Notion",
+   "family": "software"
+  },
+  "adobe": {
+   "label": "Adobe",
+   "family": "software"
+  },
+  "microsoft": {
+   "label": "Microsoft 365",
+   "family": "software"
+  },
+  "canva": {
+   "label": "Canva",
+   "family": "software"
+  },
+  "github": {
+   "label": "GitHub",
+   "family": "software"
+  },
+  "1password": {
+   "label": "1Password",
+   "family": "software"
+  },
+  "duolingo": {
+   "label": "Duolingo",
+   "family": "software"
+  },
+  "linkedin": {
+   "label": "LinkedIn Premium",
+   "family": "software"
+  },
+  "xbox": {
+   "label": "Xbox Game Pass",
+   "family": "gaming"
+  },
+  "playstation": {
+   "label": "PlayStation Plus",
+   "family": "gaming"
+  },
+  "nintendo": {
+   "label": "Nintendo Switch Online",
+   "family": "gaming"
+  },
+  "steam": {
+   "label": "Steam",
+   "family": "gaming"
+  },
+  "apple": {
+   "label": "Apple (App Store subscription)",
+   "family": null
+  },
+  "google": {
+   "label": "Google (Play)",
+   "family": null
+  },
+  "amazon": {
+   "label": "Amazon",
+   "family": null
+  },
+  "orange": {
+   "label": "Orange",
+   "family": "telecom"
+  },
+  "sosh": {
+   "label": "Sosh",
+   "family": "telecom"
+  },
+  "sfr": {
+   "label": "SFR",
+   "family": "telecom"
+  },
+  "red-by-sfr": {
+   "label": "RED by SFR",
+   "family": "telecom"
+  },
+  "free": {
+   "label": "Free",
+   "family": "telecom"
+  },
+  "bouygues": {
+   "label": "Bouygues Telecom",
+   "family": "telecom"
+  },
+  "b-and-you": {
+   "label": "B&You",
+   "family": "telecom"
+  },
+  "o2": {
+   "label": "O2",
+   "family": "services"
+  },
+  "edf": {
+   "label": "EDF",
+   "family": "energy"
+  },
+  "engie": {
+   "label": "Engie",
+   "family": "energy"
+  },
+  "totalenergies": {
+   "label": "TotalEnergies",
+   "family": "energy"
+  },
+  "ekwateur": {
+   "label": "ekWateur",
+   "family": "energy"
+  },
+  "veolia": {
+   "label": "Veolia Eau",
+   "family": "water"
+  },
+  "suez": {
+   "label": "Suez Eau",
+   "family": "water"
+  },
+  "basic-fit": {
+   "label": "Basic-Fit",
+   "family": "gym"
+  },
+  "fitness-park": {
+   "label": "Fitness Park",
+   "family": "gym"
+  },
+  "on-air": {
+   "label": "On Air Fitness",
+   "family": "gym"
+  },
+  "keepcool": {
+   "label": "Keepcool",
+   "family": "gym"
+  },
+  "neoness": {
+   "label": "Neoness",
+   "family": "gym"
+  },
+  "salledesport": {
+   "label": "Gym (generic)",
+   "family": "gym"
+  },
+  "uber-one": {
+   "label": "Uber One",
+   "family": "delivery"
+  },
+  "deliveroo-plus": {
+   "label": "Deliveroo Plus",
+   "family": "delivery"
+  },
+  "navigo": {
+   "label": "Navigo",
+   "family": "transport"
+  },
+  "lemonde": {
+   "label": "Le Monde",
+   "family": "press"
+  },
+  "mediapart": {
+   "label": "Mediapart",
+   "family": "press"
+  },
+  "lequipe": {
+   "label": "L'Equipe",
+   "family": "press"
+  },
+  "cafeyn": {
+   "label": "Cafeyn",
+   "family": "press"
+  },
+  "meetic": {
+   "label": "Meetic",
+   "family": "dating"
+  },
+  "tinder": {
+   "label": "Tinder",
+   "family": "dating"
+  },
+  "alan": {
+   "label": "Alan",
+   "family": "insurance"
+  },
+  "luko": {
+   "label": "Luko",
+   "family": "insurance"
+  },
+  "patreon": {
+   "label": "Patreon",
+   "family": "creator"
+  },
+  "twitch": {
+   "label": "Twitch",
+   "family": "creator"
+  },
+  "xcom": {
+   "label": "X Premium",
+   "family": "software"
+  },
+  "hulu": {
+   "label": "Hulu",
+   "family": "video"
+  },
+  "peacock": {
+   "label": "Peacock",
+   "family": "video"
+  },
+  "espn": {
+   "label": "ESPN+",
+   "family": "video"
+  },
+  "sky": {
+   "label": "Sky",
+   "family": "video"
+  },
+  "now-tv": {
+   "label": "NOW",
+   "family": "video"
+  },
+  "sirius": {
+   "label": "SiriusXM",
+   "family": "music"
+  },
+  "verizon": {
+   "label": "Verizon",
+   "family": "telecom"
+  },
+  "att": {
+   "label": "AT&T",
+   "family": "telecom"
+  },
+  "t-mobile": {
+   "label": "T-Mobile",
+   "family": "telecom"
+  },
+  "xfinity": {
+   "label": "Xfinity (Comcast)",
+   "family": "telecom"
+  },
+  "spectrum": {
+   "label": "Spectrum",
+   "family": "telecom"
+  },
+  "vodafone": {
+   "label": "Vodafone",
+   "family": "telecom"
+  },
+  "bt": {
+   "label": "BT",
+   "family": "telecom"
+  },
+  "virgin-media": {
+   "label": "Virgin Media",
+   "family": "telecom"
+  },
+  "giffgaff": {
+   "label": "giffgaff",
+   "family": "telecom"
+  },
+  "planet-fitness": {
+   "label": "Planet Fitness",
+   "family": "gym"
+  },
+  "equinox": {
+   "label": "Equinox",
+   "family": "gym"
+  },
+  "puregym": {
+   "label": "PureGym",
+   "family": "gym"
+  },
+  "gym-group": {
+   "label": "The Gym Group",
+   "family": "gym"
+  },
+  "peloton": {
+   "label": "Peloton",
+   "family": "gym"
+  },
+  "strava": {
+   "label": "Strava",
+   "family": "fitness_app"
+  },
+  "headspace": {
+   "label": "Headspace",
+   "family": "wellbeing"
+  },
+  "calm": {
+   "label": "Calm",
+   "family": "wellbeing"
+  },
+  "nytimes": {
+   "label": "The New York Times",
+   "family": "press"
+  },
+  "wsj": {
+   "label": "The Wall Street Journal",
+   "family": "press"
+  },
+  "guardian": {
+   "label": "The Guardian",
+   "family": "press"
+  },
+  "economist": {
+   "label": "The Economist",
+   "family": "press"
+  },
+  "washpost": {
+   "label": "The Washington Post",
+   "family": "press"
+  },
+  "substack": {
+   "label": "Substack",
+   "family": "press"
+  },
+  "medium": {
+   "label": "Medium",
+   "family": "press"
+  },
+  "hellofresh": {
+   "label": "HelloFresh",
+   "family": "meal_kit"
+  },
+  "dashpass": {
+   "label": "DoorDash DashPass",
+   "family": "delivery"
+  },
+  "instacart": {
+   "label": "Instacart+",
+   "family": "delivery"
+  },
+  "walmart-plus": {
+   "label": "Walmart+",
+   "family": "delivery"
+  },
+  "costco": {
+   "label": "Costco membership",
+   "family": null
+  },
+  "grammarly": {
+   "label": "Grammarly",
+   "family": "software"
+  },
+  "zoom": {
+   "label": "Zoom",
+   "family": "software"
+  },
+  "slack": {
+   "label": "Slack",
+   "family": "software"
+  },
+  "google-workspace": {
+   "label": "Google Workspace",
+   "family": "software"
+  },
+  "squarespace": {
+   "label": "Squarespace",
+   "family": "software"
+  },
+  "wix": {
+   "label": "Wix",
+   "family": "software"
+  },
+  "godaddy": {
+   "label": "GoDaddy",
+   "family": "software"
+  },
+  "shopify": {
+   "label": "Shopify",
+   "family": "software"
+  },
+  "evernote": {
+   "label": "Evernote",
+   "family": "software"
+  },
+  "todoist": {
+   "label": "Todoist",
+   "family": "software"
+  },
+  "bumble": {
+   "label": "Bumble",
+   "family": "dating"
+  },
+  "hinge": {
+   "label": "Hinge",
+   "family": "dating"
+  },
+  "match": {
+   "label": "Match.com",
+   "family": "dating"
+  },
+  "lastpass": {
+   "label": "LastPass",
+   "family": "software"
+  },
+  "bitwarden": {
+   "label": "Bitwarden",
+   "family": "software"
+  }
+ }
+}
